@@ -24,30 +24,30 @@ namespace Week82023.MVC.Controllers
             }
             return items;
         }
-        public IActionResult Index()
+        public async Task <IActionResult> Index()
         {
             // Activity Tracker
             ActivityAPIClient.Track(StudentID: "S00227414", StudentName: "Levi Gilmartin",
-                activityName: "RAD301 Week 8 Lab 2023", Task: "Implementing All Club Detail Filter");
+                activityName: "RAD301 Week 8 Lab 2023", Task: "Implementing Partial View");
 
             List<SelectListItem> items = FillClubs();
             items.First().Selected = true;
             ViewBag.Clubs = items;
             int cid = Int32.Parse(items.First().Value);
-            return View(db.Clubs.FirstOrDefault(c => c.ClubId == cid));
+            return await Task.FromResult(View(db.Clubs.FirstOrDefault(c => c.ClubId == cid)));
         }
         [HttpPost]
-        public IActionResult Index(Club model)
+        public async Task<IActionResult> Index(Club model)
         {
             
 
             List<SelectListItem> items = FillClubs();
             items.First(s => s.Value == model.ClubId.ToString());
             ViewBag.Clubs = items;
-            return View(db.Clubs.FirstOrDefault(c => c.ClubId == model.ClubId));
+            return await Task.FromResult(View(db.Clubs.FirstOrDefault(c => c.ClubId == model.ClubId)));
         }
 
-        public async Task<ActionResult> AllClubDetails(string ClubName = null)
+        public async Task<ActionResult> AllClubDetails(string ClubName)
         {
             // Activity Tracker
             ActivityAPIClient.Track(StudentID: "S00227414", StudentName: "Levi Gilmartin",
