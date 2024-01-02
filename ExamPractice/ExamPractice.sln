@@ -5,7 +5,11 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week8ClassLibrary2023.DataLayer", "Week8ClassLibrary2023.DataLayer\Week8ClassLibrary2023.DataLayer.csproj", "{BE4223D7-1EDB-492F-8679-A9D57AB924FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week82023.MVC", "Week82023.MVC\Week82023.MVC.csproj", "{2923342F-656B-46EA-BA9C-676031BB293F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week82023.MVC", "Week82023.MVC\Week82023.MVC.csproj", "{2923342F-656B-46EA-BA9C-676031BB293F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week9.Data.ClassLib", "Week9.Data.ClassLib\Week9.Data.ClassLib.csproj", "{0BD966A9-B42E-4C29-A818-462975CF7695}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week9.MVC", "Week9.MVC\Week9.MVC.csproj", "{53BDD2AB-96E0-41C4-989A-9162ADAFC6CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{2923342F-656B-46EA-BA9C-676031BB293F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2923342F-656B-46EA-BA9C-676031BB293F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2923342F-656B-46EA-BA9C-676031BB293F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BD966A9-B42E-4C29-A818-462975CF7695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BD966A9-B42E-4C29-A818-462975CF7695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BD966A9-B42E-4C29-A818-462975CF7695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BD966A9-B42E-4C29-A818-462975CF7695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53BDD2AB-96E0-41C4-989A-9162ADAFC6CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53BDD2AB-96E0-41C4-989A-9162ADAFC6CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53BDD2AB-96E0-41C4-989A-9162ADAFC6CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53BDD2AB-96E0-41C4-989A-9162ADAFC6CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
